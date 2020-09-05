@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+           
+       <!--<bean id="welcome" class="com.telstra.spring_maven_demo.Welcome">
+       		<property name="message" value="Welcome to string"/>
+         
+    
+       </bean>
+       
+       <bean id="welcome1" class="com.telstra.spring_maven_demo.Welcome">
+       		<constructor-arg name="message" value="Welcome to constructor"> </constructor-arg>
+         
+    
+       </bean>-->
+       
+       <bean id="line1" class="com.telstra1.spring_canvas_demo.Line">
+       		<property name="p1" ref="pl1"/>
+       		<property name="p2" ref="pl2"/>
+        </bean>
+        
+        <bean id="triangle1" class="com.telstra1.spring_canvas_demo.Triangle">
+       		<property name="p1" ref="pt1"/>
+       		<property name="p2" ref="pt2"/>
+       		<property name="p3" ref="pt3"/>
+       		
+       		
+        </bean>
+        
+        <bean id="pl1" class="com.telstra1.spring_canvas_demo.Point">
+       		<property name="x" value="1"/>
+       		<property name="y" value="2"/>
+       		
+        </bean>
+        
+        <bean id="pl2" class="com.telstra1.spring_canvas_demo.Point">
+       		<property name="x" value="2"/>
+       		<property name="y" value="2"/>
+       		
+        </bean>
+        
+        <bean id="pt1" class="com.telstra1.spring_canvas_demo.Point">
+       		<property name="x" value="3"/>
+       		<property name="y" value="4"/>
+       		
+        </bean>
+        <bean id="pt2" class="com.telstra1.spring_canvas_demo.Point">
+       		<property name="x" value="7"/>
+       		<property name="y" value="7"/>
+       		
+        </bean>
+        <bean id="pt3" class="com.telstra1.spring_canvas_demo.Point">
+       		<property name="x" value="10"/>
+       		<property name="y" value="15"/>
+       		
+        </bean>
+        
+           
+           
+           
+</beans>
