@@ -1,0 +1,6 @@
+1. Complete implementation of the abstract methods of the class Manager and Programmer to calculate the netSalary
+
+2. Complete codes in class Tax which calculates Tax for all categories of Employees 
+
+
+3. Add Class Insurance and calcuating primium for every subclasses of Employees

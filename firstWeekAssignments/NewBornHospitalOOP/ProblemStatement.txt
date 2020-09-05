@@ -1,0 +1,1 @@
+3. Develop an application for NewBorn Hospital which registers the inputs about the newBorn babies like weight etc.  and print the report about whether the baby is  healthy , undernurished, overnurished.

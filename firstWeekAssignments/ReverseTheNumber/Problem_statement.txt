@@ -1,0 +1,5 @@
+Reverse the given numbers:
+562
+800
+-899
+-900

@@ -1,0 +1,1 @@
+2. Develop an application which registers a user fo  XYZ Bank . The user can hold a account and conduct operation like Depositing and Withdrawing money from his account.Use Object Oriented Programming  concepts. discuss about the concepts

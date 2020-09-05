@@ -1,0 +1,1 @@
+4. Develop a  Dice game which is played by two  player has two dice to roll. Each dice can fetch points between 1 to 8 randomly. The application has to print the points scored by each player and declare the winner. 
