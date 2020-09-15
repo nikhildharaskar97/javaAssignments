@@ -1,0 +1,99 @@
+Microservice Exercise :- 
+	Create two microservices
+		Country Microservice -> 
+			name of application > country-service
+			BootStrap class will be in com.manipal package
+
+			CountryController in package com.manipal.demo.service
+
+			Country as a model (Entity) in package com.manipal.demo.model
+				- String countryCode
+				  String countryName
+				  Capital capital	
+
+		Capital Microservice -> capital-service
+			BootStrap class will be in com.manipal package
+
+			CapitalController in package com.manipal.demo.service
+
+			Capital as a model (Entity) in package com.manipal.demo.model
+				String zipcode
+				String name
+				String language
+				Long population
+				String countryCode
+				int port
+
+
+Country MS communicates with Capital MS and get the details of capital and  
+it will print on the browser in json format
+
+	Create REST client using Feign Client
+
+
+Both microservice should fetch data from database
+	Country MS - MySQL -  CountryRepository
+	Capital MS - MySQL -  CapitalRepository
+
+create multiple instances of Capital MS
+
+Use Ribbon for Client side load balancing.
+
+Observe the pros and cons of using Ribbon ..
+
+Overcome those cons here chose approriate naming server (Eureka)
+========================================================
+	PORT Index 
+	capital-service - 8000, 8001	
+
+	country-service - 8100
+
+	Eureka Naming Server - 8761
+
+========================================================
+Country Microservice endpoint:-
+
+http://localhost:8100/country-service/country/{countryName}
+
+
+	=> details of coutry with capital details (get from capital service)
+Capital Microservice endpoints:-
+http://localhost:8000/capital-service/capital/{capitalName}
+
+http://localhost:8000/capital-service/zipcode/{zipcode}
+http://localhost:8001/capital-service/capital/{capitalName}
+http://localhost:8001/capital-service/zipcode/{zipcode}
+
+
+total applications :- 3
+
+	capital-service
+	country-service
+	netflix-eureka-naming-server
+
+
+
+Extra Functionalities :-
+
+
+http://localhost:8000/capital-service/all 
+	=> will get all the capital details 
+
+http://localhost:8100/country-service/all
+	=> details of all the countries with their capitals' details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
